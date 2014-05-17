@@ -1,0 +1,20 @@
+body{
+	background: #2c3e50;
+	font-family: Arial;
+	color: #ecf0f1;
+}
+
+#links1{
+	width: 80%:
+	margin: auto;
+	padding: 20px;
+	border: 2 px solid;
+	background-color: red;
+	color: black;
+}
+
+.orderedList{
+	font-size: small;
+	color: white;
+	background: yellow;
+}
