@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+body{
+	font-family: Helvetica;
+	font-size: 16px;
+	background: url(../images/taj.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+#container{
+	width: 30%;
+	border: 4px double black;
+	margin: 20px 0 0 20px;
+	padding: 20px;
+	background-color: rgba(240, 240, 240, 0.7);
+}
+
+#header{
+	/*background-color: #06dff2;*/
+	background-color: rgba(13, 98, 105, 0.5);
+	padding: 15px;
+	border: 2px solid #000000;
+	margin: 0 0 20px 0;
+	font-family: "Garamond", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+h1{
+	font-size: 2.6em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
+}
+
+h2{
+	font-size: 0.8em;
+	letter-spacing: 2px;
+}
+
+p{
+	margin: 0 0 20px 0;	
+	font-family: "Merriweather", serif; 
+	line-height: 1.2em;
+	font-size: 0.9em;
+}
+
+.intro{
+	font-style: bold;
+}
+
+a{
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover{
+	color: gray;
+}
