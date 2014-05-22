@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<title>Technical Blog - 2</title>
+<div id = "header">
+Static vs relative vs absolute vs fixed positioning
+</div>
+</head>
+<body>
+<div id = "content">
+<p>There are many types of positioning systems one can use - and they can be utilized to really add standout content to a website or blog.  The main choices we have are
+
+<li>Static positioning</li>
+<li>Relative positioning</li>
+<li>Absolute positioning</li>
+<li>Fixed positioning</li></p>
+
+<p>Static positioning is boring - it's exaclty what you would think.  It's the default positioning of content on a website that comes as if you didn't have any kind of styling added to it.  The only reason you would actually set an element to static is to remove some positioning that was outside your control.</p>
+
+<p>Relative positioning is a bit of a misnomer.  Setting an element to <i>position: relative;</i> on an element with no other positioning attributes doesn't affect its position (it will be static) - but establish that element as a base by which other elements can be positioned.  However, if you do give it some positioning attribute (like for example <i>top: 10px;</i>) it will shift its position 10 pixels down from where it would normally be.  It's often used to line up form elements.  Setting a relative position does two toher things:
+
+<li>it introduces the ability to use z-index on that element, which doesn't really work with statically positioned elements.  This element will now appear on top of any other statically positioned eelments</li>
+<li>It also limits the scope of aboslutely positioned child elements.  Any element that's a child of that relatively positioned element can be absolutely positioned within that block</li></p>
+
+<p></p>
+</div>
+</body>
+</html>

@@ -3,26 +3,50 @@
 
 body{
 	font-family: Helvetica;
-	font-size: 16px;
+	font-size: 1em;
 	background: url(../images/taj.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
+header{
+	background-color: rgba(13, 98, 105, 0.5);
+	padding: 0.5em 0.25em 1.5em 0.25em;
+	font-family: garamond; 
+	font-size: 2em;
+}
+
+#topnav{
+	float: right;
+}
+
+#topnav li{
+	float: left;
+	padding: 0.5em;
+	font-size: 0.5em;
+}
+
+#topnav li a{
+	color: white;
+}
+
+#topnav li a:hover{
+	color: #7f8c8d;
+}
 
 #container{
-	width: 30%;
-	border: 4px double black;
-	margin: 20px 0 0 20px;
-	padding: 20px;
+	width: 40%;
+	border: 0.25em double black;
+	margin: 5em auto 0 auto;
+	padding: 1.2em;
 	background-color: rgba(240, 240, 240, 0.7);
 }
 
 #header{
 	/*background-color: #06dff2;*/
 	background-color: rgba(13, 98, 105, 0.5);
-	padding: 15px;
-	border: 2px solid #000000;
-	margin: 0 0 20px 0;
+	padding: 1em;
+	border: 0.15em solid #000000;
+	margin: 0 0 1.2em 0;
 	font-family: "Garamond", sans-serif;
 	text-transform: uppercase;
 	text-align: center;
@@ -30,20 +54,20 @@ body{
 
 
 h1{
-	font-size: 2.6em;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	padding: 20px 0 20px 0;
-	margin: 20px 0 20px 0;
+	font-size: 2em;
+	border-top: 0.05em solid black;
+	border-bottom: 0.05em solid black;
+	padding: 0.5em 0 0.5em 0;
+	margin: 0.5em 0 0.5em 0;
 }
 
 h2{
-	font-size: 0.8em;
-	letter-spacing: 2px;
+	font-size: 1em;
+	letter-spacing: 0.15em;
 }
 
 p{
-	margin: 0 0 20px 0;	
+	margin: 0 0 1.2em 0;	
 	font-family: "Merriweather", serif; 
 	line-height: 1.2em;
 	font-size: 0.9em;
@@ -54,10 +78,10 @@ p{
 }
 
 a{
-	color: blue;
+	color: #2980b9;
 	text-decoration: none;
 }
 
 a:hover{
-	color: gray;
+	color: #7f8c8d;
 }
