@@ -23,7 +23,9 @@ Static vs relative vs absolute vs fixed positioning
 <li>it introduces the ability to use z-index on that element, which doesn't really work with statically positioned elements.  This element will now appear on top of any other statically positioned eelments</li>
 <li>It also limits the scope of aboslutely positioned child elements.  Any element that's a child of that relatively positioned element can be absolutely positioned within that block</li></p>
 
-<p></p>
+<p>Absolute positioning is something I"m on the fence about.  It allows you to literally place any page element somewhere specifically on a page.  These values are relative to the next parent element with relative (or absolute) positioning.  You can use positioning attributes of top, right, bottom, left to set the location.  These positionings are all relative to the next parent element - if there's no parent, it'll default all the way back up to the html element itself, meaning it'll be placed relative to the page itself.  Absolute elements are removed from the flow of elements on the page.</p>
+
+<p>Last but not least, there is fixed positioning.  A fixed positioning is positioned relative to the viewport - or the browser window itself.  Viewport doesn't change when the window is scrolled - so a fixed positioned element will stay right where it is when the page is scrolled, where a sidebar or a piece of the page is fixed.  It keeps the navigation present at all times and creates an interesting effect on the page.  The bad is that it creates useability and responsiveness issues.  Can also overlap footer content.  Cool effect but an effect that has to be used with caution.</p>
 </div>
 </body>
 </html>
