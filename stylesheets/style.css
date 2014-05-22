@@ -34,7 +34,7 @@ header{
 }
 
 #container{
-	width: 40%;
+	width: 30em;
 	border: 0.25em double black;
 	margin: 5em auto 0 auto;
 	padding: 1.2em;
