@@ -1,0 +1,59 @@
+#header{
+	font-family: "Garamond", sans-serif;
+	font-size: 35px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	width: 100%;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#content{
+	font-family: "Garamond", sans-serif;
+	margin: 10px 0 0 10px;
+	padding: 10px;
+	color: #7f8c8d;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	font-size: 18px;
+}
+
+a:link{color: orange;}
+
+a:visited{color:green;}
+
+#sidebar{
+	float: left;
+	background-color: red;
+	width: 100px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid green;
+}
+
+#footer{
+	position: absolute;
+	background-color: red;
+	width: 1000px;
+	height: 100px;
+	bottom: -20px;
+	margin: 15px;
+	border: 10px solid green;
+}
+
+.catImage{
+	position: relative;
+	left: 20px;
+	top: 100px;
+}
+
+
+.catCaption{
+	position: absolute;
+	left: 50px;
+	top: 300px;
+	color: blue;
+}

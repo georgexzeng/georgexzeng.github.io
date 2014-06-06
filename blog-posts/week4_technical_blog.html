@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<title>Technical Blog - 4</title>
+<div id = "header">
+Enumerable#map
+</div>
+</head>
+<body>
+<div id = "content">
+
+<p><i>Enumerable</i> is a very interseting module within Ruby.  Ruby's official documentation describes <i>enumerable</i> as a "mixin (that) provides collection classes with traversal and searching methods and with the ability to sort."  The class must provide a method <i>each</i>, which gives you successive members of the collection.  In short, <i>enumberables</i> enable one to repeat actions with a class.</p>
+
+<p>The enumerable we're focused on right now is <i>Enumerable#map</i>.  Enumerable#map creates a new array by performing some operation on every item in the given collection.  Map and collect are the same - you can use either.  Map, however, is shorter and draws a comparison to functional mapping.</p>
+
+<p>At its most basic level, enumerable#map modifies each character in a consistent way: 
+<p>[1, 2, 3, 4].map {|number| number*2}</p>
+<p>=>[2, 4, 6, 8]</p>
+
+<p>["Bat", "Aqua", "Super"].map {|adjective| adjective+"man"}</p>
+<p>=>["Batman", "Aquaman", "Superman"]</p>
+
+
+
+<p><b>Great references:</b></p>
+<li>http://www.globalnerdy.com/2008/06/25/enumerating-enumerable-enumerablecollectenumerablemap/</li>
+<li>http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/</li>
+<li>http://www.globalnerdy.com/2008/08/31/enumerating-enumerable-enumerablegroup_by/</li>
+ 
+</div>
+</body>
+</html>
