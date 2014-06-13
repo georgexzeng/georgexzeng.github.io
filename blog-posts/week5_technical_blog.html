@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<title>Technical Blog - 5</title>
+<div id = "header">
+Instance variables and instance methods
+</div>
+</head>
+<body>
+<div id = "content">
+<p>Instance variables are variables that can be defined for different objects within a class.  It's used, oftentimes, in comparison to class variables - because class variables are the same variable defined consistently across a class.  Instance variables are oftentimes used when you need different values for objects within the same class.  A good example of this would be the following - let's say you define a class Polygon with 10 sides:</p>
+
+class Polygon<br>
+	@@sides=10<br>
+	def self.sides<br>
+		@sides<br>
+	end<br>
+end<br><br>
+
+puts Polygon.sides #=>10<br>
+
+<p>However, if you create subclasses within Polygons, let's say a Triangle with 3 slides, changing the class variable sides for Triangle also changes this value for Polygons</p>
+
+class Triangle < Polygon<br>
+	@@sides = 3<br>
+end<br>
+<br>
+
+puts Triangle.sides # => 3<br>
+puts Polygon.sides # => 3<br>
+
+<p>However, instead if we focus on specifying class level instance variables, we won't have this problem:</p>
+
+class Polygon<br>
+  class << self; attr_accessor :sides end<br>
+  @sides = 8<br>
+end<br><br>
+
+puts Polygon.sides # => 8<br>
+
+class Triangle < Polygon<br>
+  @sides = 3<br>
+end<br><br>
+
+puts Triangle.sides # => 3<br>
+puts Polygon.sides # => 8<br>
+
+<p>At the end of the day, what the instance variable allows us to do is to separate different values (3 and 8) for different objects.</p>
+
+</body>
+</html>
