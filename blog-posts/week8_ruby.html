@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<title>Technical Blog - Week 8</title>
+<div id = "header">
+Cheat Sheet - Ruby
+</div>
+</head>
+<body>
+<div id = "content">
+<p><b>Ruby Basics</b></p>
+<p><b>Types of Characters</b></p>
+123 - Integer (Fixnum or Bignum)<br>
+123.123 - Float<br>
+0x0xFF00 0b01100 0244 - Integer as hexadecimal, binary, or octal<br>
+1..5 'a'..'z' - Range inclusive <br>
+1...5 'a'...'z' - Range noninclusive<br>
+?c - Character?<br>
+'string' - String<br>
+"string/n" - Double quoted string with escape character<br>
+"string#{...}" - Double quoted string with inline expressions<br>
+:symbol - Symbol<br>
+/regexp/opts - Regexp (regular expression)<br>
+[123, 'string', object, :symbol] - Array<br>
+{1=>2, :symbol=>'string'} - Hash (associative array)<br>
+
+<p><b>Variables</b></p>
+local - Locally variables
+@instance - Instance variables
+@@class - Class variables
+$global - Global variables
+Constant - Constant
+
+<p><b>Express</b></p>
+if condition<br>
+...<br>
+end<br><br>
+
+if condition<br>
+...<br>
+elsif condition<br>
+...<br>
+else<br>
+...<br>
+end<br><br>
+
+unless condition<br>
+...<br>
+else<br>
+...<br>
+end<br><br>
+
+...if condition<br><br>
+
+...unless condition<br><br>
+
+condition ? ...: ... (a ternary operator)<br><br>
+
+case...<br>
+when condition<br>
+...<br>
+else<br>
+...<br>
+end<br><br>
+
+while condition<br>
+...<br>
+end<br><br>
+
+until condition<br>
+...<br>
+end<br><br>
+
+do<br>
+...<br>
+while condition<br><br>
+
+do<br>
+...<br>
+until condition<br><br>
+
+for object in enumerable<br>
+...<br>
+end<br><br>
+
+break<br>
+next<br>
+redo<br>
+retry<br>
+
+yield arguments<br>
+
+<p><b>Object</b></p>
+
+.class - Return object's class<br>
+.inspect - Return a string containing info about the object<br>
+.instance_eval - String code.  Evaluates a string or block in the context of the object<br>
+.instance_eval {...} - Block. Evalutes a string or block in the context of the object<br>
+.methods - Returns an array with the object's methods<br>
+.nil? - Returns true if the object equals nil<br>
+.respond_to? - Symbol methodname.  Returns true if the object responds to the method<br>
+.send - Symbol methodname, [arguments].  Sends the message to the object along with optional arguments<br>
+.to_s - Returns a string of the object.
+
+<p><b>Enumberable</b></p>
+
+.all?{|object|...} - Sends all elements to the block and returns true if every block returned true.<br>
+.any?{|objec|...} - Sends all elemetns to the block and returns true if any block returned true.<br>
+.map{|object|...} - Sends all elements to the block and returns a new Array with each result.<br>
+.find{|object|...} - Sends all elements to the block and returns the first element for which the blocks result is not false<br>
+.detect{|object|...} - Sends all elements to the block and returns the first element for which the block result is not false<br>
+.find_all{|object|...} - Sends all elements to the block and returns all elements for which the block is not false<br>
+.select {|object|...} - Sends all elements to the block and returns all elements for which the block is not false<br>
+.grep - Object pattern.  Returns a new Array with all elements for which pattern === element
+.include? - Object object.  Returns true if the collection includes object<br>
+.sort[{|object, object|...}] - Returns the Array, sorted by each elements or by the block<br><br>
+
+<p><b>Array (Enumerable)</b></p>
+[] - Fixnum index.  Returns the object at the specified index or all objects in the specified range<br>
+[] - Fixnum start.  Returns the object at the specified index or all objects in the specified range<br>
+[] - Fixnum length.  Returns the object at the specified index or all objects in the specified range<br>
+[] - Range range.  Returns the object at the specified index or all objects in the specified range<br>
+.compact - Returns the Array without element that equal nil<br>
+.delete - Object object.  Delets object from the Array. <br>
+.delete_at - Fixnum index.  Deletes the object at index from the Array.<br>
+.delete_if{|object|...} - Deletes elements for which the block returns true<br>
+.each{|object|...} - Sends each element to the block<br>
+.flatten - Flattens the Array and makes it one dimensional<br>
+.index - Object object.  Returns the index of the first occurence of object<br>
+.insert - Fixnum index, Object object.  Inserts object at the positino specified by index<br>
+.join - String separator.  Returns a String with all elements separated by separator<br>
+.length - Returns the number of elements<br>
+.pop - Returns the last eelement and removes it<br>
+.push - Object object... Pushes object to the end of the Array<br>
+.reverse - Reverses the order of elements<br>
+.rindex - Object object... Returns the index of the last occurence of object<br>
+.shift - Returns the first element and remove it<br>
+.uniq - Returns a new Array without duplicates<br>
+.unshift - Object object... Pushes object to teh front of the Array<br><br>
+
+<p><b>Hash (Enumerable)</b></p>
+[] - Object key.  Returns the value for key<br>
+[] = value - Object key.  Sets the value for key<br>
+.delete - Object key.  Deletes key and value from the Array<br>
+.delete_if{|key, value|...} - Deletes key and value for which block returns true<br>
+.each{|key, value|...} - Sends each key and value to the block<br>
+.each_key{|key|...} - Sends each value to the block<br>
+.each_value{|value|...} - Sends each value to teh block<br>
+.include? - Object object...  Returns true if the hash includes a value for key<br>
+.key? - Object obecjt... Returns true if the hash includes a value for key<br>
+.value? - Object object... Returns true if the collection includes a key for value<br>
+.index - Object object... Returns the key for value<br>
+.invert - Returns a new Hash with keys and values inverted<br>
+.keys - Returns an Array with all keys from the Hash<br>
+.length - Returns the number of key-value pairs<br>
+.merge - Hash hash... Returns a new Hash with entries from both Hashes<br>
+.select {|object|...} - Returns an Array with key-value pairs for which the lbock returns true<br>
+.to_a - Returns an Array with nested key-value pairs<br>
+.values - Returns an Array with all values from the Hash<br>
+
+<p><b>String (Enumerable)</b></p>
+[] - Fixnum index.  Returns the specified character of string. <br>
+[] - Range range.  Returns the specified character or string. <br>
+.capitalize - Returns a capitalized version of the string. <br>
+.center - Fixnum width, [String fitler]. Centers the string using spaces or a specified filler string. <br>
+.chomp - [String separator].  Returns a String with separator removed from the end. <br>
+.count - Returns the number of characters. <br>
+.downcase - Returns a lowercase version of the string. <br>
+.gsub - Regexp regexp.  String replacement. Replaces all occurences of regexp with replacement<br>
+.gsub{|string...|...} - Regexp regexp.  Finds all occurences of regexp and replaces them with the result of the block.<br>
+.index - String/Regexp piece.  Returns the positino of the first occurence of piece<br>
+.rindex - String/Regexp piece.  Returns the position of the last occurence of piece<br>
+.scan{|string...|...} - Regexp regexp.  Scans the string for occurences of regexp and passes them to teh block<br>
+.split - String string.  Splits the string into an array and returns it<br>
+.strip - String string.  Splits the string into an array and returns it<br>
+.swapcase - Returns a version of the string with uppercase turned to lowercase and vice-versa<br>
+.to_sym - Returns a symobl named like the string<br>
+.upcase - Returns an uppercase version of the string
+
+</div>
+</body>
+</html>
