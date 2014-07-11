@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+<title>Technical Blog - Week 9</title>
+<div id = "header">
+Cheat Sheet - Javascript
+</div>
+</head>
+<body>
+<div id = "content">
+<p><b>Javascript Basics</b></p>
+<p><b>Types of Characters</b></p>
+Strings - var bananas = "I have some bananas";  var oranges = 'Don\'t have oranges'; Continaed in double or single quotes<br>
+Numbers - var numberOfBanas = 5; var numberOfOranges = 0;<br>
+Boolean - var haveBananas = true; var haveOranges = false; Value of true or false, no quotes <br>
+Undefined - var strawberries; No value assigned to it yet <br>
+Null - var pumpkins = null; No quotes; a purposely empty value (not the same as 0 or undefined) <br>
+
+<p><b>Functions</b></p>
+
+function sayHi(){ //Defines a function with the name sayHi<br>
+	console.log('Hi!!');<br>
+}<br>
+sayHi(); //Call the function<br>
+
+<p><b>While Loops</b></p>
+
+var x=0;<br>
+while(x<5){<br>
+	console.log(x);<br>
+	x++;<br>
+}<br>
+
+<p><b>For Loops</b></p>
+
+for (initialize; condition; update){<br>
+	//statements to repeat<br>
+}<br><br>
+
+for (var i =0; i<5; i++){<br>
+	console.log(i);<br>
+}<br>
+
+<p><b>Arrays</b></p>
+var rainbox=['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];<br>
+
+<p><b>Bracket notation</b></p>
+var firstColor = rainbow[0];<br>
+var lastColor = rainbow[6]; <br>
+rainbow[2]='Brown';<br>
+
+<p><b>Object literal (Objects)</b></p>
+var kitten ={<br>
+	age:1,<br>
+	name: "Fluffy",<br>
+	likes:["yarn", "snuggles"],<br>
+	color: "grey"<br>
+};<br><br>
+
+<p><b>Dot notation - accessing information</b></p>
+var likes = kitten.likes;<br>
+kitten.name="Furball";<br>
+
+<p><b>Objects in functions</b></p>
+var kitten = {<br>
+	name: "Fluffy"<br>
+	species: "cat"<br>
+}<br><br>
+
+function.aboutMyPets(pet){<br>
+	console.log(pet.name+"is my pet" + pet.species);<br>
+}<br><br>
+
+aboutMyPets(kitten);<br>
+
+<p><b>Functions in objects(methods)</b></p>
+
+var kitten = {<br>
+	name: "Fluffy",<br>
+	species: "cat",<br>
+	getName: functions(){<br>
+	console.log(this.name);<br>
+	}<br>
+}<br>
+
+kitten.getName()<br>
+
+</div>
+</body>
+</html>
